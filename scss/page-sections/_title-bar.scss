@@ -1,0 +1,22 @@
+.title-bar {
+    position: sticky;
+    top: 0;
+    background: background-color(yellow-dark);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 7px 7px 0 0;
+    z-index: 5;
+
+    &__title {
+        padding: 0 16px;
+
+        &-text {
+            @include settings-font(small);
+        }
+    }
+
+    &__caption-control {
+        display: inline-flex;
+    }
+}

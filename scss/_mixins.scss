@@ -1,0 +1,19 @@
+@mixin get-icon($icon, $color) {
+    background: $color;
+    -webkit-mask-image: mask-image($icon);
+    -moz-mask-image: mask-image($icon);
+    mask-image: mask-image($icon);
+}
+
+@mixin settings-icon($size, $cursor) {
+    display: inline-block;
+    width: $size;
+    height: $size;
+    mask: center no-repeat;
+    cursor: $cursor;
+}
+
+@mixin settings-font($size) {
+    font-size: font-size($size);
+    line-height: line-height($size);
+}

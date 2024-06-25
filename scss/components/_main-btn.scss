@@ -1,0 +1,99 @@
+.main-btn {
+    border: none;
+    background: background-color(white);
+    display: inline-block;
+    border-radius: border-radius(small);
+    line-height: line-height(null);
+    cursor: pointer;
+
+
+    &__content {
+        min-width: 112px;
+        @include settings-font(medium);
+        font-family: 'Segoe Ui';
+    }
+
+    &__dropdown {
+        display: inline-flex;
+        gap: 0 4px;
+        align-items: center;
+
+        &-text {
+            min-width: 80px;
+            @include settings-font(medium);
+            font-family: 'Segoe Ui';
+        }
+
+        &-icon {
+            @include settings-icon(16px, default);
+
+            &_chevron {
+                @include get-icon(chevron, color-general(black));
+            }
+        }
+    }
+
+    &__icon {
+        @include settings-icon(16px, default);
+
+        &_small-hamburger {
+            @include get-icon(small-hamburger, color-general(black));
+        }
+
+        &_message {
+            @include get-icon(message, color-general(black));
+        }
+
+        &_add-user {
+            @include get-icon(add-user, color-general(black));
+        }
+
+        &_add-event {
+            @include get-icon(add-event, color-general(black));
+        }
+
+        &_dots-horizontal-small {
+            @include get-icon(dots-horizontal-small, color-general(black));
+        }
+
+        &_copy {
+            @include get-icon(copy, color-general(black));
+        }
+    }
+
+    &_primary {
+        background: color-button(yellow-light);
+        padding: 7px 8px 9px;
+
+        &:hover {
+            background: color-button(yellow-dark);
+        }
+    }
+
+    &_secondary {
+        border: 1px solid color-border(grey);
+        padding: 6px 7px 8px;
+
+        &:hover {
+            border: 1px solid color-border(dark-grey);
+        }
+    }
+
+    &_dropdown {
+        border: 1px solid color-border(grey);
+        padding: 6px 13px 8px;
+
+        &:hover {
+            border: 1px solid color-border(dark-grey);
+        }
+    }
+
+    &_icon {
+        border: 1px solid color-border(grey);
+        padding: 9px;
+
+        &:hover {
+            border: 1px solid color-border(dark-grey);
+        }
+    }
+}

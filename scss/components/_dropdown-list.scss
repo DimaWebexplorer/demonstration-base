@@ -1,0 +1,37 @@
+.dropdown-list {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 4px 0;
+    padding: 0 24px;
+
+    &__header {
+        display: inline-flex;
+        gap: 0 16px;
+        align-items: center;
+        padding: 7px 0 9px;
+
+        &-title {
+            display: inline-flex;
+            gap: 0 8px;
+            align-items: center;
+
+            &-icon {
+                @include settings-icon(20px, default);
+
+                &_unlock {
+                    @include get-icon(unlock, color-general(black));
+                }
+            }
+        }
+
+        &-link {
+            text-decoration: none;
+            color: color-general(blue);
+        }
+    }
+    &__check-info {
+        display: inline-flex;
+        gap: 0 8px;
+        align-items: center;
+    }
+}

@@ -1,0 +1,4 @@
+.info {
+    @include settings-icon(20px, pointer);
+    background-image: mask-image(alert-circle);
+}

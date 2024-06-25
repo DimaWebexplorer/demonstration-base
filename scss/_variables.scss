@@ -1,0 +1,150 @@
+$fontSizeMap: (
+    large: 28px,
+    medium: 14px,
+    small: 12px,
+);
+
+@function font-size($size) {
+    @if map-has-key($fontSizeMap, $size) {
+        @return map-get($fontSizeMap, $size)
+    }
+};
+
+$lineHeightMap: (
+    large: 32px,
+    medium: 20px,
+    small: 16px,
+    null: 0,
+);
+
+@function line-height($size) {
+    @if map-has-key($lineHeightMap, $size) {
+        @return map-get($lineHeightMap, $size)
+    }
+};
+
+$borderRadiusMap: (
+    large: 7px,
+    medium: 6px,
+    small: 4px,
+);
+
+@function border-radius($size) {
+    @if map-has-key($borderRadiusMap, $size) {
+        @return map-get($borderRadiusMap, $size)
+    }
+};
+
+
+$iconMenuMap: (
+    add-event: url(../icons/add-event.svg),
+    add-user: url(../icons/add-user.svg),
+    alert-circle: url(../icons/alert-circle.svg),
+    arrow-narrow-left: url(../icons/arrow-narrow-left.svg),
+    arrow-narrow-right: url(../icons/arrow-narrow-right.svg),
+    bank-note: url(../icons/bank-note.svg),
+    bar-chart-square: url(../icons/bar-chart-square.svg),
+    bell_active: url(../icons/bell_active.svg),
+    block-up: url(../icons/block-up.svg),
+    building: url(../icons/building.svg),
+    check: url(../icons/check.svg),
+    chevron: url(../icons/chevron.svg),
+    clock: url(../icons/clock.svg),
+    close: url(../icons/close.svg),
+    copy: url(../icons/copy.svg),
+    cube: url(../icons/cube.svg),
+    dots-horizontal: url(../icons/dots-horizontal.svg),
+    dots-horizontal-small: url(../icons/dots-horizontal-small.svg),
+    hamburger: url(../icons/hamburger.svg),
+    home: url(../icons/home.svg),
+    line-chart-up: url(../icons/line-chart-up.svg),
+    link: url(../icons/link.svg),
+    log-in: url(../icons/log-in.svg),
+    log-out: url(../icons/log-out.svg),
+    message: url(../icons/message.svg),
+    minimize: url(../icons/minimize.svg),
+    nav-close: url(../icons/nav-close.svg),
+    pie-chart: url(../icons/pie-chart.svg),
+    reduce: url(../icons/reduce.svg),
+    route: url(../icons/route.svg),
+    search: url(../icons/search.svg),
+    settings: url(../icons/settings.svg),
+    small-hamburger: url(../icons/small-hamburger.svg),
+    star: url(../icons/star.svg),
+    unlock: url(../icons/unlock.svg),
+    wallet: url(../icons/wallet.svg),   
+);
+
+@function mask-image($url) {
+    @if map-has-key($iconMenuMap, $url) {
+        @return map-get($iconMenuMap, $url)
+    }
+}
+
+
+
+$colorButtonMap: (
+    yellow-light: #FFDB4D,
+    yellow-dark: #FFD11A,
+    white: #FFFFFF,
+);
+
+@function color-button($color) {
+    @if map-has-key($colorButtonMap, $color) {
+        @return map-get($colorButtonMap, $color)
+    }
+};
+
+$colorBorderMap: (
+    grey: #D6D6D6,
+    dark-grey: #989898,
+);
+
+@function color-border($color) {
+    @if map-has-key($colorBorderMap, $color) {
+        @return map-get($colorBorderMap, $color)
+    }
+};
+
+$colorTextMap: (
+    black: #000000,
+    blue: #406ABF,
+);
+
+@function color-text($color) {
+    @if map-has-key($colorTextMap, $color) {
+        @return map-get($colorTextMap, $color)
+    }
+};
+
+$colorBackgroundMap: (
+    light-grey: #FAFAFA,
+    grey: map-get($colorBorderMap, grey),
+    yellow-light: map-get($colorButtonMap, yellow-light),
+    yellow-dark: map-get($colorButtonMap, yellow-dark),
+    white: map-get($colorButtonMap, white),
+);
+
+@function background-color($color) {
+    @if map-has-key($colorBackgroundMap, $color) {
+        @return map-get($colorBackgroundMap, $color)
+    }
+};
+
+$generalColorMap: (
+    black: map-get($colorTextMap, black),
+    white: map-get($colorButtonMap, white),
+    yellow-light: map-get($colorButtonMap, yellow-light),
+    yellow-dark: map-get($colorButtonMap, yellow-dark),
+    grey: map-get($colorBorderMap, grey),
+    light-grey: map-get($colorBackgroundMap, light-grey),
+    dark-grey: map-get($colorBorderMap, dark-grey),
+    blue: map-get($colorTextMap, blue),
+    light-black: rgba(#000000, .4),
+);
+
+@function color-general($color) {
+    @if map-has-key($generalColorMap, $color) {
+        @return map-get($generalColorMap, $color)
+    }
+};

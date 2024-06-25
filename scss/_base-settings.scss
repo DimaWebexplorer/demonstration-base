@@ -1,0 +1,26 @@
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Segoe UI';
+    src: url(../fonts/SegoeUI-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Segoe UI';
+    src: url(../fonts/SegoeUI-SemiBold.ttf);
+    font-weight: 600;
+}
+
+body {
+    background-color: background-color(light-grey);
+    color: color-text(black);
+    @include settings-font(medium);
+    font-family: 'Segoe UI';
+    font-weight: 400;
+}
+

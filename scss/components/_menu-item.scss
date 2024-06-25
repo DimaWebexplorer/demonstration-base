@@ -1,0 +1,73 @@
+.menu-item {
+    padding: 4px;
+    display: inline-flex;
+    gap: 0 4px;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover {
+        background: background-color(grey);
+    }
+
+    &__text {
+        min-width: 244px;
+        @include settings-font(medium);
+    }
+
+    &__icon {
+        &-cont {
+            padding: 6px;
+            line-height: line-height(null);
+        }
+
+        @include settings-icon(20px, pointer);
+
+        &_star {
+            @include get-icon(star, color-general(black));
+        }
+
+        &_line-chart-up {
+            @include get-icon(line-chart-up, color-general(black));
+        }
+
+        &_pie-chart {
+            @include get-icon(pie-chart, color-general(black));
+        }
+
+        &_log-out {
+            @include get-icon(log-out, color-general(black));
+        }
+
+        &_log-in {
+            @include get-icon(log-in, color-general(black));
+        }
+
+        &_route {
+            @include get-icon(route, color-general(black));
+        }
+
+        &_cube {
+            @include get-icon(cube, color-general(black));
+        }
+
+        &_wallet {
+            @include get-icon(wallet, color-general(black));
+        }
+
+        &_bar-chart-square {
+            @include get-icon(bar-chart-square, color-general(black));
+        }
+
+        &_building {
+            @include get-icon(building, color-general(black));
+        }
+
+        &_bank-note {
+            @include get-icon(bank-note, color-general(black));
+        }
+
+        &_settings {
+            @include get-icon(settings, color-general(black));
+        }
+    }
+}

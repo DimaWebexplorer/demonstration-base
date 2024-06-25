@@ -1,0 +1,25 @@
+.btn-user-nav {
+    &-cont {
+        padding: 8px;
+        line-height: line-height(null);
+
+        &:hover {
+            background: background-color(grey);
+        }
+    }
+    @include settings-icon(20px, pointer);
+
+    &_hamburger {
+        @include get-icon(hamburger, color-general(black));
+    }
+
+    &_clock {
+        @include get-icon(clock, color-general(black));
+    }
+
+    &_bell {
+        &-active {
+            background-image: mask-image(bell_active);
+        }
+    }
+}

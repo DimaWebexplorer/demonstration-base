@@ -1,0 +1,127 @@
+.view {
+    border: 1px solid color-border(dark-grey);
+    border-radius: border-radius(medium);
+    flex-grow: 1;
+
+    &__nav {
+        display: flex;
+        border-bottom: 1px solid color-border(dark-grey)
+    }
+
+    &__tab-switch {
+        display: flex;
+        padding: 24px 31px 23px;
+        border-bottom: 1px solid color-border(dark-grey);
+        background: background-color(white);
+        justify-content: space-between;
+
+        &-page-cont {
+            display: inline-flex;
+            gap: 0 24px;
+        }
+
+        &-switches {
+            display: inline-flex;
+            gap: 0 4px;
+        }
+
+        &-content {
+            @include settings-font(large);
+            font-weight: 600;
+            min-width: 784px;
+        }
+
+        &-nav {
+            display: inline-flex;
+            gap: 0 4px;
+        }
+    }
+
+    &__user-cfg-menu {
+        background: background-color(white);
+        padding: 32px 31px;
+        display: flex;
+    }
+
+    &__user-config {
+        background: background-color(white);
+        border-bottom: 1px solid color-border(dark-grey);
+        padding: 0 31px 31px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px 0;
+
+        &-buttons {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            &-left {
+                display: inline-flex;
+                min-width: 752px;
+                gap: 0 8px;
+            }
+
+            &-right {
+                display: inline-flex;
+                gap: 0 8px;
+            }
+        }
+
+        &-field {
+            display: inline-flex;
+            align-items: end;
+            gap: 0 16px;
+
+            &-check {
+                display: inline-flex;
+                align-items: center;
+                gap: 0 8px;
+            }
+        }
+
+        &-authentication {
+            display: inline-flex;
+            align-items: center;
+            gap: 0 16px;
+
+            &-link {
+                display: inline-block;
+                text-decoration: none;
+                color: color-general(blue)
+            }
+        }
+    }
+
+    &__user-addit-menu {
+        background: background-color(white);
+        padding: 32px 31px;
+        display: flex;
+    }
+
+    &__user-additional {
+        background: background-color(white);
+        border-radius: 0 0 border-radius(medium) border-radius(medium);
+        padding: 0 31px 31px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px 0;
+
+        &-checkboxes {
+            display: inline-flex;
+            flex-direction: column;
+            gap: 4px 0;
+        }
+
+        &-field {
+            display: inline-flex;
+            align-items: end;
+            gap: 0 16px;
+        }
+
+        &-buttons {
+            display: inline-flex;
+            gap: 0 8px;
+        }
+    }
+}

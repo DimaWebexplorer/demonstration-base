@@ -1,0 +1,20 @@
+.caption-button {
+    &-cont {
+        padding: 8px 15px;
+        line-height: line-height(null);
+    }
+
+    @include settings-icon(16px, pointer);
+
+    &_minimize {
+        @include get-icon(minimize, color-general(black));
+    }
+
+    &_reduce {
+        @include get-icon(reduce, color-general(black));
+    }
+
+    &_close {
+        @include get-icon(close, color-general(black));
+    }
+}

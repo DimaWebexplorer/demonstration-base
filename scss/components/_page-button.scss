@@ -1,0 +1,29 @@
+.page-button {
+    &-cont {
+        padding: 6px;
+        line-height: line-height(null);
+    }
+
+    @include settings-icon(24px, pointer);
+
+    &_arrow-left {
+        @include get-icon(arrow-narrow-left, color-general(black));
+    }
+
+    &_arrow-right {
+        opacity: .3;
+        @include get-icon(arrow-narrow-right, color-general(black));
+    }
+
+    &_star {
+        @include get-icon(star, color-general(black));
+    }
+
+    &_link {
+        @include get-icon(link, color-general(black));
+    }
+
+    &_dots-horizontal {
+        @include get-icon(dots-horizontal, color-general(black));
+    }
+}

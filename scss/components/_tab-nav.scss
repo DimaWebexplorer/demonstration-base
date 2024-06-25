@@ -1,0 +1,102 @@
+.tab-nav {
+    &-icon {
+        line-height: line-height(null);
+        border-right: 1px solid color-border(dark-grey);
+        position: relative;
+        padding: 9px;
+        border-radius: border-radius(medium) 0 0 0;
+    
+        &__content {
+            @include settings-icon(16px, pointer);
+    
+            &_home {
+                @include get-icon(home, color-general(black));
+            }
+        }
+    
+        &:hover {
+            background: background-color(grey);
+        }
+    
+        &_active {
+            background: background-color(white);
+            margin-bottom: -1px;
+    
+            &:hover {
+                background: background-color(white);
+            }
+        }
+    }
+
+    &-text {
+        line-height: line-height(null);
+        padding: 8px 11px 9px;
+        border-right: 1px solid color-border(dark-grey);
+        position: relative;
+        cursor: pointer;
+    
+        .nav-close {
+            display: none;
+            position: absolute;
+            right: 0;
+            top: 0;
+            background: background-color(grey);
+            filter: drop-shadow(-8px 0 8px #E6E6E6);
+    
+            &__icon {
+                &-cont {
+                    padding: 6px 7px 4px 4px;
+    
+                }
+    
+                @include settings-icon(24px, pointer);
+    
+                &_close {
+                    @include get-icon(nav-close, color-general(black));
+                }
+            }
+    
+        }
+    
+        &__content {
+            @include settings-font(small);
+        }
+    
+        &:hover {
+            background: background-color(grey);
+    
+            .nav-close {
+                display: inline-block;
+            }
+        }
+    
+        &_active {
+            background: background-color(white);
+            margin-bottom: -1px;
+    
+            .nav-close {
+                background: background-color(white);
+                filter: drop-shadow(-8px 0 8px background-color(white));
+            }
+    
+            &:hover {
+                background: background-color(white);
+            }
+        }
+    }
+}
+
+.tab-cont {
+    &_active {
+        background: background-color(white);
+        margin-bottom: -1px;
+        &:hover {
+            background: background-color(white);
+
+        }
+        .nav-close {
+            background: background-color(white);
+            filter: drop-shadow(-8px 0 8px background-color(white));
+        }
+    }
+}
