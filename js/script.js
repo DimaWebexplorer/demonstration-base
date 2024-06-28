@@ -19,8 +19,6 @@ const pageButtonLeft = document.querySelector('.page-button_arrow-left');
 const pageButtonRight = document.querySelector('.page-button_arrow-right');
 const pageTitle = document.querySelector('.view__tab-switch-content');
 
-let closeButtons = document.querySelectorAll('.nav-close__icon_close');
-
 let pageCount = tabsNav.length - 1;
 
 function previousPage() {
