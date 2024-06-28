@@ -5,6 +5,7 @@
 
         &:hover {
             background: background-color(grey);
+            border-radius: border-radius(small);
         }
     }
     @include settings-icon(20px, pointer);

@@ -1,0 +1,29 @@
+.user-select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    min-width: 504px;
+    padding: 6px 11px 8px 15px;
+    border-radius: border-radius(small);
+    font-family: 'Segoe UI';
+    color: color-general(black);
+    @include settings-font(medium);
+    border: 1px solid color-border(grey);
+    background-image: mask-image(chevron);
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position: top 8px right 11px;
+    outline: none;
+
+    &:hover {
+        background-color: background-color(light-grey);
+        cursor: pointer;
+    }
+
+    &__item {
+        @include settings-font(medium);
+        &_selected {
+            display: none;
+        }
+    }
+}
