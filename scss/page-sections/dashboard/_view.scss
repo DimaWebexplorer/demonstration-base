@@ -52,32 +52,9 @@
         gap: 24px 0;
 
         &-buttons {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-
-            &-left {
-                display: inline-flex;
-                min-width: 752px;
-                gap: 0 8px;
-            }
-
-            &-right {
-                display: inline-flex;
-                gap: 0 8px;
-            }
-        }
-
-        &-field {
             display: inline-flex;
-            align-items: end;
-            gap: 0 16px;
-
-            &-check {
-                display: inline-flex;
-                align-items: center;
-                gap: 0 8px;
-            }
+            align-items: center;
+            gap: 0 8px;
         }
 
         &-authentication {
@@ -111,12 +88,6 @@
             display: inline-flex;
             flex-direction: column;
             gap: 4px 0;
-        }
-
-        &-field {
-            display: inline-flex;
-            align-items: end;
-            gap: 0 16px;
         }
 
         &-buttons {

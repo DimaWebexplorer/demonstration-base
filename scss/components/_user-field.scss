@@ -1,0 +1,23 @@
+.user-field {
+    display: inline-flex;
+    align-items: end;
+    gap: 0 16px;
+    cursor: pointer;
+
+    &__box {
+        display: inline-flex;
+        flex-direction: column;
+        gap: 8px 0;
+
+        &-title {
+            font-weight: 600;
+            @include settings-font(medium);
+        }
+    }
+
+    &__buttons {
+        display: inline-flex;
+        gap: 0 8px;
+        align-items: center;
+    }
+}
